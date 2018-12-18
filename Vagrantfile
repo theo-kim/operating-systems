@@ -48,7 +48,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
    config.vm.provider "virtualbox" do |vb|
   #   # Don't boot with headless mode
   #   vb.gui = true
-      vb.name = "xv6_box"
+      vb.name = "xv6"
       vb.memory = 1024
   #
   #   # Use VBoxManage to customize the VM. For example to change memory:
@@ -81,7 +81,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
    config.vm.provision "puppet" do |puppet|
      puppet.manifests_path  = "manifests"
-     puppet.manifest_file   = "os3224.pp"
+     puppet.manifest_file   = "vagrant_manifest.pp"
      #puppet.options         = "--verbose --debug" # <----- Uncomment to debug your puppet setup
    end
 
