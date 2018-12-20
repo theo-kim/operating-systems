@@ -1,0 +1,33 @@
+## XV6 Homework Assignment #HW3
+
+The assignment asks to modify system calls. The following files were altered:
+
+```
+ Makefile - altered to include new files in compilation
+ bio.c       |  20 +++++-----
+ bootmain.c  |   2 +-
+ buf.h       |   4 +-
+ console.c   |  24 +++++-------
+ date.c - created a new command to show the current date
+ date.h - altered the rtcdate structure
+ defs.h      |   4 +-
+ fs.c        |  28 +++++++-------
+ fs.h        |  21 +++++------
+ grep.c      |   3 +-
+ ide.c       |  24 ++++--------
+ kill.c      |   2 +-
+ log.c       |  26 ++++++-------
+ main.c      |   1 +
+ memide.c    |  13 +++----
+ memlayout.h |   2 +-
+ mkfs.c      | 103 ++++++++++++++++++++++++++--------------------------
+ param.h     |   3 +-
+ proc.c      |   9 +----
+ sign.pl     |   0
+ syscall.c   |  31 ++++++++++++++++
+ syscall.h   |   2 +
+ sysproc.c   |  14 +++++++
+ user.h      |   3 ++
+ usys.S      |   1 +
+
+```
